@@ -1,0 +1,6 @@
+# Django framework
+Django==5.1.4
+
+# talk to Postgres
+psycopg==3.2.3
+psycopg2-binary==2.9.10
