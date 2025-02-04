@@ -9,7 +9,9 @@ migrate:
 	docker compose exec web python3 manage.py migrate
 
 s-user:
-	docker compose exec python3 manage.py createsuperuser
+	docker compose exec web python3 manage.py createsuperuser
+mng:
+	python3 manage.py startapp ftlogin
 
 ### Docker compose commands
 up:

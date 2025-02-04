@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from ftlogin import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+	path('oauth2', views.home, name='oauth2'),
+	path('oauth2/login', views.ftlogin, name='oauth2_login'),
 ]
